@@ -1,20 +1,19 @@
-package org.example.hotel.dtoEntity;
 
+package org.example.hotel.assissEntity;
+        import lombok.Getter;
+        import lombok.Setter;
+        import lombok.ToString;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+        import javax.persistence.Column;
+        import javax.persistence.Entity;
+        import javax.persistence.Table;
 
 @Entity
 @Getter
 @Setter
 @ToString
-@Table(name = "comfort")
-public class Comfort {
+@Table(name = "roomConvenient")
+public class RoomConvenient{
 
     @Column(name = "basses")
     private String basses;
