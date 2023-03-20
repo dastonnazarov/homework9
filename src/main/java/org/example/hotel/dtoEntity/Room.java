@@ -16,12 +16,16 @@ import javax.persistence.*;
 public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @Column(name = "number")
     private Integer number;
 
     @Column(name = "floor")
-    private String floor;
+    private Integer floor;
 
     @Column(name = "type")
+    @Enumerated(EnumType.STRING)
     private RoomType type;
 
     @Column(name = "price")

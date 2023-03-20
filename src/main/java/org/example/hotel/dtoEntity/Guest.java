@@ -26,4 +26,6 @@ public class Guest {
     @Column(name = "phone")
     private String phone;
 
+
+
 }

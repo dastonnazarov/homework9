@@ -3,6 +3,8 @@ package org.example.hotel.assissEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.example.hotel.dtoEntity.Employee;
+import org.example.hotel.dtoEntity.Guest;
 import org.example.hotel.enums.ComplainStatus;
 
 import javax.persistence.*;
@@ -17,11 +19,9 @@ public class Complain {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "employee_id")
-    private Integer employee_id;
+    private Employee employee;
 
-    @Column(name = "guest_id")
-    private Integer guest_id;
+    private Guest guest;
 
     @Column(name = "status")
     private ComplainStatus status;

@@ -32,6 +32,7 @@ public class Employee {
     private LocalDate birthDate;
 
     @Column(name = "status")
+    @Enumerated(EnumType.STRING)
     private EmployeeStatus status;
 
 }

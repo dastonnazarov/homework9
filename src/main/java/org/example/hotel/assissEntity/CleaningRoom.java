@@ -17,6 +17,7 @@ import java.time.LocalDate;
 @ToString
 @Table(name = "cleaningRoom")
 public class CleaningRoom {
+
     @Column(name = "room_id")
     private Integer room_id;
 

@@ -3,6 +3,7 @@ package org.example.hotel.assissEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.example.hotel.dtoEntity.Guest;
 
 import javax.persistence.*;
 
@@ -12,9 +13,12 @@ import javax.persistence.*;
 @ToString
 @Table(name = "guestPassportData")
 public class GuestPassportData {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-    @Column(name = "guest_id")
-    private Integer guest_id;
+
+    private Guest guest;
 
     @Column(name = "pNumber")
     private String pNumber;
